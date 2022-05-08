@@ -1,0 +1,222 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem=10px*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+body {
+  font-family: "Raleway", sans-serif;
+  font-size: 1.6rem;
+  line-height: 2;
+}
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  margin: 0 0 5rem 0;
+}
+h1 {
+  font-size: 5rem;
+}
+h2 {
+  font-size: 4rem;
+}
+h3 {
+  font-size: 3rem;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.contenedor {
+  max-width: 120rem;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+.btn {
+  background-color: #362706;
+  display: block;
+  color: #E9E5D6;
+  text-transform: uppercase;
+  font-weight: 900;
+  padding: 1rem;
+  transition: background-color 0.3s ease-out;
+}
+.btn:hover {
+  background-color: #3b0107;
+}
+
+/*utilidades*/
+.text-center {
+  text-align: center;
+}
+/*header y navegacion*/
+.nombre-sitio {
+  margin-top: 5rem;
+  text-align: center;
+}
+.nombre-sitio span {
+  color: #464E2E;
+}
+.contenedor-navegacion {
+  border-top: 1px solid #E9E5D6;
+}
+.nav-principal {
+  padding: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+/*box model*/
+.hero {
+  background-image: url("Imagenes Ecommerce/principal.jpg");
+  height: 55rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/*categorias*/
+.categorias {
+  padding-top: 5rem;
+}
+.categorias h2 {
+  text-align: center;
+}
+.categorias a {
+  display: block;
+  text-align: center;
+  padding: 2rem;
+  font-size: 2rem;
+}
+.categorias a:hover {
+  background-color: #464E2E;
+  color: beige;
+  border-bottom-right-radius: 1rem;
+}
+.listado-categorias {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+}
+/*nosotros seccion*/
+.sobre-nosotros {
+  background-image: linear-gradient(
+      to right,
+      transparent 50%,
+      #464E2E 50%,
+      #464E2E 100%
+    ),
+    url("Imagenes Ecommerce/nosotros.jpg");
+  background-position: left center;
+  padding: 10rem;
+  background-repeat: no-repeat;
+  background-size: 100%, 120rem;
+}
+.sobre-nosotros-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 8rem;
+}
+.texto-nosotros {
+  grid-column: 2/3;
+}
+/* listado de productos*/
+
+.contenido-principal {
+  padding-top: 5rem;
+}
+.listado-productos {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 2rem;
+}
+.producto:nth-child(1) {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.producto:nth-child(1) img {
+  height: 50rem;
+  width: 100%;
+  object-fit: cover;
+}
+.producto:nth-child(2) {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+.producto:nth-child(2) img,
+.producto:nth-child(3) img {
+  height: 30rem;
+  width: 100%;
+  object-fit: cover;
+}
+.producto:nth-child(3) {
+  grid-column-start: 4;
+  grid-column-end: 7;
+}
+
+.producto:nth-child(4) {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+.producto:nth-child(5) {
+  grid-column-start: 3;
+  grid-column-end: 5;
+}
+.producto:nth-child(6) {
+  grid-column-start: 5;
+  grid-column-end: 7;
+}
+
+.producto {
+  background-color: #464E2E;
+}
+.texto-producto {
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+.texto-producto h3 {
+  margin: 0;
+}
+.texto-producto p {
+  margin: 0 0 0.5rem 0;
+}
+.texto-producto .precio {
+  font-size: 2.8rem;
+  font-weight: 900;
+}
+/*footer*/
+.site-footer{
+    border-top: 1px solid #E9E5D6;
+    margin-top: 5rem;
+    padding: 5rem;
+    display: grid;
+
+}
+.site-footer h3{
+    margin-bottom: .5rem    ;
+}
+.grid-footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 2rem;
+
+}
+
+
+.footer-menu a{
+display: block;
+}
+.copyright{
+    margin-top: 5rem;
+    text-align: center;
+
+}
