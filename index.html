@@ -1,200 +1,82 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hidroponia info</title>
-    <link rel="stylesheet" href="normalize.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Raleway:wght@400;700;900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Sabinos's Art Gallery</title>
   </head>
-  <!--esto es un comentario-->
   <body>
-    <header>
-      <h1 class="nombre-sitio">Hidroponia<span> Hoy</span></h1>
-    </header>
-    <div class="contenedor-navegacion">
-      <nav class="nav-principal contenedor">
-        <a href="index.html">Inicio</a>
-        <a href="nosotros.html">Nosotros</a>
-        <a href="tienda.html">Tienda</a>
-        <a href="blog.html">Blog</a>
-        <a href="galeria.html">Galeria</a>
-        <a href="contacto.html">Contacto</a>
-      </nav>
-    </div>
-
-    <div class="hero"></div>
-    <section class="contenedor categorias">
-      <h2 class="text-center">Sobre la hidroponia</h2>
-      <div class="listado-categorias">
-        <div class="categoria">
-          <img src="/Imagenes Ecommerce/categoria1.jpg" alt="categoria1" />
-          <a href="#">Sistema NFT</a>
-        </div>
-
-        <div class="categoria">
-          <img src="/Imagenes Ecommerce/categoria2.jpg" alt="categoria2" />
-          <a href="#">Sistema de raiz flotante</a>
-        </div>
-
-        <div class="categoria">
-          <img src="/Imagenes Ecommerce/categoria3.jpg" alt="categoria3" />
-          <a href="#">Otros sistemas</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="sobre-nosotros">
-      <div class="contenedor sobre-nosotros-grid">
-        <div class="texto-nosotros">
-          <h2>sobre nosotros</h2>
+    <section>
+      <div class="circle"></div>
+      <header>
+        <a href="#"><img src="logo.png" class="logo" alt="" /></a>
+        <ul>
+          <li><a href="inicio.html">Home</a></li>
+          <li><a href="sistemas.html">Sistemas</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="historia.html">Historia</a></li>
+         
+        </ul>
+      </header>
+      <div class="content">
+        <div class="textbx">
+          <h2>
+            Quien sabe lo que siembra<br />no teme a lo que <span>cosecha</span>
+          </h2>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam
-            tenetur sint aliquam possimus, perspiciatis repellendus ipsa sit quo
-            maxime esse vitae quibusdam quam aliquid eaque, dolores qui beatae
-            laudantium tempore?
+            La Hidroponía es el arte de cultivar plantas sin usar suelo
+            agrícola.  En los cultivos sin suelo, éste es reemplazado por un
+            sustrato inerte donde los nutrientes (el alimento) que necesita la
+            planta para vivir y producir son entregados en el riego.
           </p>
+          <a href="inicio.html">Aprende Mas</a>
+        </div>
+        <div class="imgbx">
+          <img src="tomate.png" alt="" class="star" />
         </div>
       </div>
+      <ul class="thumb">
+        <li>
+          <img
+            src="tomate.png"
+            onclick="imgSlider('tomate.png');changeCircleColor('#464e2e')"
+          />
+        </li>
+        <li>
+          <img
+            src="lechuga.png"
+            onclick="imgSlider('lechuga.png');changeCircleColor('#464e2e')"
+          />
+        </li>
+        <li>
+          <img
+            src="fresa.png"
+            onclick="imgSlider('fresa.png');changeCircleColor('#464e2e')"
+          />
+        </li>
+      </ul>
+      <ul class="sci">
+        <li>
+          <a href="#"><img src="icons8-facebook-nuevo-48 (1).png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="icons8-twitter-48 (1).png" alt="" /></a>
+        </li>
+        <li>
+          <a href="#"><img src="icons8-instagram-48 (1).png" alt="" /></a>
+        </li>
+      </ul>
     </section>
-
-    <main class="contenido-principal contenedor">
-      <h2 class="text-center">Acerca de la hidroponia</h2>
-
-      <div class="listado-productos">
-        <div class="producto">
-          <img src="/Imagenes Ecommerce/producto1.jpg" alt="imagen producto" />
-          <div class="texto-producto">
-            <h3>producto 1</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos praesentium, alias corporis veniam voluptate rem id
-              impedit cumque error, dolore nihil ullam ab magni consectetur
-              quibusdam officia ducimus expedita nulla?
-            </p>
-            
-            <a class="btn" href="#">Conocer mas</a>
-          </div>
-          <!--fin producto1-->
-        </div>
-        <div class="producto">
-          <img src="/Imagenes Ecommerce/producto2.jpg" alt="imagen producto" />
-          <div class="texto-producto">
-            <h3>producto 2</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos praesentium, alias corporis veniam voluptate rem id
-              impedit cumque error, dolore nihil ullam ab magni consectetur
-              quibusdam officia ducimus expedita nulla?
-            </p>
-            
-            <a class="btn" href="#">Conocer mas</a>
-          </div>
-          <!--fin producto1-->
-        </div>
-        <div class="producto">
-          <img src="/Imagenes Ecommerce/producto3.jpg" alt="imagen producto" />
-          <div class="texto-producto">
-            <h3>producto 3</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos praesentium, alias corporis veniam voluptate rem id
-              impedit cumque error, dolore nihil ullam ab magni consectetur
-              quibusdam officia ducimus expedita nulla?
-            </p>
-            
-            <a class="btn" href="#">Conocer mas</a>
-          </div>
-          <!--fin producto1-->
-        </div>
-        <div class="producto">
-          <img src="/Imagenes Ecommerce/producto4.jpg" alt="imagen producto" />
-          <div class="texto-producto">
-            <h3>producto 4</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos praesentium, alias corporis veniam voluptate rem id
-              impedit cumque error, dolore nihil ullam ab magni consectetur
-              quibusdam officia ducimus expedita nulla?
-            </p>
-           
-            <a class="btn" href="#">Conocer mas</a>
-          </div>
-          <!--fin producto1-->
-        </div>
-        <div class="producto">
-          <img src="/Imagenes Ecommerce/producto5.jpg" alt="imagen producto" />
-          <div class="texto-producto">
-            <h3>producto 5</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos praesentium, alias corporis veniam voluptate rem id
-              impedit cumque error, dolore nihil ullam ab magni consectetur
-              quibusdam officia ducimus expedita nulla?
-            </p>
-            
-            <a class="btn" href="#">Conocer mas</a>
-          </div>
-          <!--fin producto1-->
-        </div>
-        <div class="producto">
-          <img src="/Imagenes Ecommerce/producto6.jpg" alt="imagen producto" />
-          <div class="texto-producto">
-            <h3>producto 6</h3>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Dignissimos praesentium, alias corporis veniam voluptate rem id
-              impedit cumque error, dolore nihil ullam ab magni consectetur
-              quibusdam officia ducimus expedita nulla?
-            </p>
-            
-            <a class="btn" href="#">Conocer mas</a>
-          </div>
-          <!--fin producto1-->
-        </div>
-      </div>
-    </main>
-
-    <footer class="site-footer">
-      <div class="grid-footer contenedor">
-        <div >
-          <h3>categorias</h3>
-          <nav class="footer-menu">
-            <a href="#">Oficinia</a>
-            <a href="#">Cocina</a>
-            <a href="#">Jardin</a>
-            <a href="#">Cultivos</a>
-            <a href="#">Unete</a>
-          </nav>
-        </div>
-        <div>
-          <h3>sobre nosotros</h3>
-          <nav class="footer-menu">
-            <a href="#">nuestra historia</a>
-            <a href="#">mision, vision y valores</a>
-            <a href="#">privacidad</a>
-            <a href="#">terminos del servicio</a>
-            <a href="#">carrera</a>
-          </nav>
-        </div>
-        <div>
-          <h3>soporte</h3>
-          <nav class="footer-menu">
-            <a href="#">preguntas frecuentes</a>
-            <a href="#">ayuda en linea</a>
-            <a href="#">confianza y seguridad</a>
-          </nav>
-        </div>
-      </div>
-      
-      <p class="copyright">todos los derechos reservados Hyperion tec (Equipo 5)</p>
-    </footer>
+    <script type="text/javascript">
+      function imgSlider(anything) {
+        document.querySelector(".star").src = anything;
+      }
+      function changeCircleColor(color) {
+        const circle = document.querySelector(".circle");
+        circle.style.background = color;
+      }
+    </script>
   </body>
 </html>
